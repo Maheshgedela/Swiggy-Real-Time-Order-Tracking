@@ -1,0 +1,43 @@
+/* Full page background */
+body {
+    background: linear-gradient(135deg, #ff914d, #ff6f61);
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Center box */
+.center-box {
+    width: 350px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+
+    /* Centering */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Title */
+.center-box h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+/* Links */
+.center-box a {
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 10px 0;
+    color: #ff4d00;
+    font-weight: bold;
+}
+
+.center-box a:hover {
+    color: #cc3b00;
+}

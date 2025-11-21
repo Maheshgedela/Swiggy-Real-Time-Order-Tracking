@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Swiggy Real-Time Tracking</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+
+            /* Smooth Swiggy gradient background */
+            background: linear-gradient(135deg, #ff7a29, #ff4d00);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background: white;
+            width: 380px;
+            padding: 35px;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+            animation: popup 0.4s ease-out;
+        }
+
+        @keyframes popup {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        .logo {
+            width: 80px;
+            margin-bottom: 12px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        a {
+            display: block;
+            background: #ff4d00;
+            color: white;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.2s;
+        }
+
+        a:hover {
+            background: #c03900;
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <!-- Swiggy Logo -->
+    <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/1/13/Swiggy_logo.png">
+
+    <h2>Swiggy Realtime Tracking</h2>
+
+    <a href="/register">➕ Create Account</a>
+    <a href="/login">🔐 Login</a>
+    <a href="/order/1/status-page">📍 Customer – Track Order</a>
+    <a href="/restaurant">🍽️ Restaurant Update</a>
+    <a href="/delivery/1/page">🚴 Delivery Partner Update</a>
+
+</div>
+
+</body>
+</html>

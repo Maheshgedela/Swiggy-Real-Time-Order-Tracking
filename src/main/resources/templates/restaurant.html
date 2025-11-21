@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Restaurant Dashboard</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <h2>Restaurant Dashboard</h2>
+
+        <form method="post" th:action="@{'/order/' + ${order.id} + '/status'}">
+
+            <label>Select Order Status</label>
+
+            <select name="status" required>
+                <option value="ACCEPTED">Accepted</option>
+                <option value="COOKING">Cooking</option>
+                <option value="PICKED">Picked Up</option>
+                <option value="ARRIVING">Arriving</option>
+                <option value="DELIVERED">Delivered</option>
+            </select>
+
+            <button type="submit">Update Status</button>
+        </form>
+
+        <p style="margin-top:15px;">
+            <a href="/">Back Home</a>
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

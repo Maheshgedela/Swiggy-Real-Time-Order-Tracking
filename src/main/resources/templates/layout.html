@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #ff914d;     /* common background */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial;
+        }
+
+        .card {
+            background: white;
+            width: 350px;
+            padding: 30px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+
+        a {
+            display: block;
+            margin: 10px;
+            text-decoration: none;
+            color: #ff4d00;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #c03900;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <!-- Main Page Content -->
+    <div th:replace="${content}"></div>
+</div>
+
+</body>
+</html>
